@@ -52,6 +52,6 @@ python3 -m http.server 8000
 
 ## Dominio
 
-`CNAME` contiene `fantacazzo.men`. Su Cloudflare servono i record DNS verso
+`CNAME` contiene `news.fantacazzo.men`. Su Cloudflare servono i record DNS verso
 GitHub Pages, con il proxy **disattivato** (DNS only) almeno finché GitHub non
 ha emesso il certificato.
