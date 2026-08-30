@@ -378,6 +378,14 @@
   /* ---------------- gusti pizze ---------------- */
 
   function paginaPizze() {
+    var a = L.pizzeAnnuncio;
+    if (a) {
+      var occ = $('[data-slot="pz-occhiello"]'); if (occ) occ.textContent = a.occhiello || '';
+      html($('[data-slot="pz-titolo"]'), esc(a.titolo || ''));
+      html($('[data-slot="pz-annuncio"]'), (a.paragrafi || []).map(function (t) {
+        return '<p>' + esc(t) + '</p>';
+      }).join(''));
+    }
     var l = (L.pizze || []).slice().sort(function (a, b) { return b.voto - a.voto; });
     if (!l.length) return;
     var medaglia = ['#C9A227', '#9A9A9A', '#A9713B'];

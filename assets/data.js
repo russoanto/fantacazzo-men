@@ -134,15 +134,23 @@ window.LEGA = {
   },
 
   /* ============================================================
-     GUSTI PIZZE — la classifica seria della lega.
-     Ogni voce: { nome, ingredienti, voto (0-10), autore?, nota? }.
-     Vengono ordinate da sola per voto, dal piu alto.
+     GUSTI PIZZE — menu ufficiale della lega, collab Pizzeria Delfino.
+     annuncio: paragrafi del comunicato. pizze: il menu, in ordine.
      ============================================================ */
+  pizzeAnnuncio: {
+    occhiello: "Comunicato ufficiale \u00b7 Partnership rinnovata",
+    titolo: "Delfino con noi fino al 2030",
+    paragrafi: [
+      "\u00c8 fatta: la collaborazione con la Pizzeria Delfino \u00e8 stata rinnovata fino al 2030. Altri cinque anni di impasti, di litigate sul gusto giusto e di cartoni che arrivano puntuali come le pagelle del luned\u00ec.",
+      "Il consiglio di lega, riunito in seduta straordinaria davanti a tre birre, ha ratificato all\u2019unanimit\u00e0 il menu ufficiale che accompagner\u00e0 ogni asta, ogni scontro diretto e ogni sconfitta bruciante. Cinque gusti, nessun compromesso: chi vuole l\u2019ananas sa gi\u00e0 dove non trovarlo."
+    ]
+  },
   pizze: [
-    { nome: "[NOME PIZZA]", ingredienti: "[INGREDIENTI]", voto: 9.0, autore: "[CHI L'HA PROPOSTA]", nota: "[COMMENTO]" },
-    { nome: "[NOME PIZZA]", ingredienti: "[INGREDIENTI]", voto: 8.0, autore: "[CHI L'HA PROPOSTA]", nota: "[COMMENTO]" },
-    { nome: "[NOME PIZZA]", ingredienti: "[INGREDIENTI]", voto: 7.0, autore: "[CHI L'HA PROPOSTA]", nota: "[COMMENTO]" },
-    { nome: "[NOME PIZZA]", ingredienti: "[INGREDIENTI]", voto: 6.0, autore: "[CHI L'HA PROPOSTA]", nota: "[COMMENTO]" }
+    { nome: "Salsiccia e patate", ingredienti: "mozzarella, salsiccia, patate al forno", voto: 9.5, autore: "il consiglio di lega", nota: "La regina. Vince l\u2019asta prima ancora di iniziare." },
+    { nome: "Salsiccia", ingredienti: "mozzarella, salsiccia", voto: 8.5, autore: "i puristi", nota: "Senza fronzoli, come un modulo 3-4-3 vecchio stampo." },
+    { nome: "W\u00fcrstel e patatine", ingredienti: "mozzarella, w\u00fcrstel, patatine fritte", voto: 8.0, autore: "il fondatore", nota: "Divide la lega ma riempie il tavolo. Da sfondamento." },
+    { nome: "Vecchia Modena", ingredienti: "squacquerone, prosciutto crudo, rucola", voto: 7.5, autore: "l\u2019ala nobile", nota: "L\u2019acquisto di classe: costa un po\u2019 di pi\u00f9, ma si fa notare." },
+    { nome: "Margherita", ingredienti: "pomodoro, mozzarella, basilico", voto: 7.0, autore: "tutti, prima o poi", nota: "Il jolly. Nessuno la sceglie per primo, nessuno la rifiuta." }
   ],
 
   finestraMercato: "Riapre dopo la 9ª giornata"
