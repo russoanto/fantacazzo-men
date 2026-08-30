@@ -347,6 +347,57 @@
     drawTab();
   }
 
+  /* ---------------- regolamento ---------------- */
+
+  function paginaRegolamento() {
+    var r = L.regolamento;
+    if (!r) return;
+    html($('[data-slot="reg-intro"]'), esc(r.intro || ''));
+    var agg = $('[data-slot="reg-aggiornato"]');
+    if (agg) agg.textContent = r.aggiornato ? ('aggiornato al ' + r.aggiornato) : '';
+
+    var toc = (r.sezioni || []).map(function (s, i) {
+      return '<a href="#reg-' + i + '"><span class="idx num">' + (i + 1) + '</span>' + esc(s.titolo) + '</a>';
+    }).join('');
+    html($('[data-slot="reg-toc"]'), toc);
+
+    html($('[data-slot="reg-body"]'), (r.sezioni || []).map(function (s, i) {
+      var testo = s.testo == null ? [] : (Array.isArray(s.testo) ? s.testo : [s.testo]);
+      var par = testo.filter(function (t) { return t; })
+        .map(function (t) { return '<p>' + esc(t) + '</p>'; }).join('');
+      var punti = (s.punti && s.punti.length)
+        ? '<ul>' + s.punti.map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('') + '</ul>'
+        : '';
+      return '<section class="reg-art" id="reg-' + i + '">' +
+        '<div class="reg-num num">' + String(i + 1).padStart(2, '0') + '</div>' +
+        '<div class="reg-content"><h2>' + esc(s.titolo) + '</h2>' + par + punti + '</div>' +
+        '</section>';
+    }).join(''));
+  }
+
+  /* ---------------- gusti pizze ---------------- */
+
+  function paginaPizze() {
+    var l = (L.pizze || []).slice().sort(function (a, b) { return b.voto - a.voto; });
+    if (!l.length) return;
+    var medaglia = ['#C9A227', '#9A9A9A', '#A9713B'];
+    html($('[data-slot="pizze"]'), l.map(function (p, i) {
+      var col = p.voto >= 8 ? ACCENT : (p.voto < 6 ? RUST : INK);
+      var rank = i < 3
+        ? '<span class="pz-medal" style="background:' + medaglia[i] + '">' + (i + 1) + '</span>'
+        : '<span class="pz-rank num">' + (i + 1) + '</span>';
+      return '<article class="pz-card">' +
+        '<div class="pz-left">' + rank +
+          '<div class="pz-id"><h2>' + esc(p.nome) + '</h2>' +
+          '<p class="pz-ing">' + esc(p.ingredienti || '') + '</p></div></div>' +
+        '<div class="pz-right">' +
+          (p.nota ? '<p class="pz-note">' + esc(p.nota) + '</p>' : '') +
+          (p.autore ? '<span class="pz-author">proposta da ' + esc(p.autore) + '</span>' : '') +
+          '<span class="pz-voto num" style="color:' + col + '">' + Number(p.voto).toFixed(1) + '</span>' +
+        '</div></article>';
+    }).join(''));
+  }
+
   /* ---------------- comune ---------------- */
 
   function comune() {
@@ -372,5 +423,7 @@
     else if (p === 'giornata') paginaGiornata();
     else if (p === 'squadre') paginaSquadre();
     else if (p === 'albo') paginaAlbo();
+    else if (p === 'regolamento') paginaRegolamento();
+    else if (p === 'pizze') paginaPizze();
   });
 })();

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gusti pizze — Fantacazzo</title>
+<meta name="description" content="La classifica dei gusti pizza della lega: la vera posta in palio del fantacalcio.">
+<meta name="theme-color" content="#171412">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,600;6..96,800&family=Archivo:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="pizze">
+
+<div class="topbar">
+  <div><span data-slot="data-oggi"></span></div>
+  <div><span data-slot="lega"></span></div>
+</div>
+
+<header class="bar">
+  <a class="wordmark" href="index.html">FANTACAZZO</a>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="giornata.html">Giornata</a>
+    <a href="squadre.html">Squadre</a>
+    <a href="albo.html">Albo &amp; mercato</a>
+    <a href="regolamento.html">Regolamento</a>
+    <a href="pizze.html" aria-current="page">Gusti pizze</a>
+  </nav>
+</header>
+
+<main class="page">
+  <div class="page-head">
+    <div>
+      <div class="eyebrow">La classifica che conta davvero</div>
+      <h1>Gusti pizze</h1>
+    </div>
+  </div>
+
+  <div class="pz-list" data-slot="pizze"></div>
+</main>
+
+<footer class="footer">
+  <div>
+    <div class="wordmark">FANTACAZZO</div>
+    <div class="small">fantacazzo.men &middot; lega <span data-slot="lega-nome"></span> &middot; stagione <span data-slot="stagione"></span></div>
+  </div>
+  <nav>
+    <div><span class="h">Lega</span><a href="index.html">Home</a><a href="regolamento.html">Regolamento</a></div>
+  </nav>
+</footer>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

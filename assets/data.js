@@ -113,5 +113,37 @@ window.LEGA = {
     { giocatore: "[GIOCATORE]", squadra: "Melma FC",       crediti: 88  }
   ],
 
+  /* ============================================================
+     REGOLAMENTO — struttura pronta, da riempire.
+     Ogni sezione: { titolo, testo?, punti?[] }.
+       - testo: uno o piu paragrafi (stringa o array di stringhe)
+       - punti: elenco puntato (array di stringhe)
+     Usa quello che serve; puoi lasciare vuoto cio che non usi.
+     ============================================================ */
+  regolamento: {
+    intro: "[INTRO: due righe su spirito e formato della lega]",
+    aggiornato: "[DATA ULTIMO AGGIORNAMENTO]",
+    sezioni: [
+      { titolo: "Formato e squadre",       testo: "[COME e composta la lega, quante squadre, gironi]", punti: [] },
+      { titolo: "Asta e crediti",          testo: "[BUDGET iniziale, regole d'asta, svincoli]", punti: [] },
+      { titolo: "Formazioni e schieramenti", testo: "[MODULI ammessi, scadenza formazioni, chi non schiera]", punti: [] },
+      { titolo: "Punteggi e modificatori", testo: "[SCALA gol, bonus/malus, modificatore difesa, portiere]", punti: [] },
+      { titolo: "Mercato di riparazione",  testo: "[QUANDO apre, scambi, regole]", punti: [] },
+      { titolo: "Premi e montepremi",      testo: "[COSA vince chi, ripartizione]", punti: [] }
+    ]
+  },
+
+  /* ============================================================
+     GUSTI PIZZE — la classifica seria della lega.
+     Ogni voce: { nome, ingredienti, voto (0-10), autore?, nota? }.
+     Vengono ordinate da sola per voto, dal piu alto.
+     ============================================================ */
+  pizze: [
+    { nome: "[NOME PIZZA]", ingredienti: "[INGREDIENTI]", voto: 9.0, autore: "[CHI L'HA PROPOSTA]", nota: "[COMMENTO]" },
+    { nome: "[NOME PIZZA]", ingredienti: "[INGREDIENTI]", voto: 8.0, autore: "[CHI L'HA PROPOSTA]", nota: "[COMMENTO]" },
+    { nome: "[NOME PIZZA]", ingredienti: "[INGREDIENTI]", voto: 7.0, autore: "[CHI L'HA PROPOSTA]", nota: "[COMMENTO]" },
+    { nome: "[NOME PIZZA]", ingredienti: "[INGREDIENTI]", voto: 6.0, autore: "[CHI L'HA PROPOSTA]", nota: "[COMMENTO]" }
+  ],
+
   finestraMercato: "Riapre dopo la 9ª giornata"
 };
