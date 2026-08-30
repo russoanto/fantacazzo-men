@@ -4,7 +4,7 @@
    ============================================================ */
 
 window.LEGA = {
-  nome: "[NOME LEGA]",
+  nome: "Fantacazzo",
   stagione: "2026/27",
   dal: 2017,
   giornataCorrente: 3,
