@@ -386,23 +386,16 @@
         return '<p>' + esc(t) + '</p>';
       }).join(''));
     }
-    var l = (L.pizze || []).slice().sort(function (a, b) { return b.voto - a.voto; });
+    var l = L.pizze || [];
     if (!l.length) return;
-    var medaglia = ['#C9A227', '#9A9A9A', '#A9713B'];
-    html($('[data-slot="pizze"]'), l.map(function (p, i) {
-      var col = p.voto >= 8 ? ACCENT : (p.voto < 6 ? RUST : INK);
-      var rank = i < 3
-        ? '<span class="pz-medal" style="background:' + medaglia[i] + '">' + (i + 1) + '</span>'
-        : '<span class="pz-rank num">' + (i + 1) + '</span>';
+    html($('[data-slot="pizze"]'), l.map(function (p) {
       return '<article class="pz-card">' +
-        '<div class="pz-left">' + rank +
-          '<div class="pz-id"><h2>' + esc(p.nome) + '</h2>' +
-          '<p class="pz-ing">' + esc(p.ingredienti || '') + '</p></div></div>' +
-        '<div class="pz-right">' +
-          (p.nota ? '<p class="pz-note">' + esc(p.nota) + '</p>' : '') +
-          (p.autore ? '<span class="pz-author">proposta da ' + esc(p.autore) + '</span>' : '') +
-          '<span class="pz-voto num" style="color:' + col + '">' + Number(p.voto).toFixed(1) + '</span>' +
-        '</div></article>';
+        '<div class="pz-id">' +
+          '<h2>' + esc(p.nome) + '</h2>' +
+          '<p class="pz-ing">' + esc(p.ingredienti || '') + '</p>' +
+        '</div>' +
+        (p.nota ? '<p class="pz-note">' + esc(p.nota) + '</p>' : '') +
+      '</article>';
     }).join(''));
   }
 

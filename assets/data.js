@@ -134,23 +134,23 @@ window.LEGA = {
   },
 
   /* ============================================================
-     GUSTI PIZZE — menu ufficiale della lega, collab Pizzeria Delfino.
-     annuncio: paragrafi del comunicato. pizze: il menu, in ordine.
+     GUSTI PIZZE — le pizze ufficiali che la lega ordinera da Delfino.
+     annuncio: il comunicato. pizze: i gusti scelti (senza voti).
      ============================================================ */
   pizzeAnnuncio: {
-    occhiello: "Comunicato ufficiale \u00b7 Partnership rinnovata",
-    titolo: "Delfino con noi fino al 2030",
+    occhiello: "Comunicato ufficiale \u00b7 Rinnovo partnership",
+    titolo: "Delfino resta il fornitore ufficiale fino al 2030",
     paragrafi: [
-      "\u00c8 fatta: la collaborazione con la Pizzeria Delfino \u00e8 stata rinnovata fino al 2030. Altri cinque anni di impasti, di litigate sul gusto giusto e di cartoni che arrivano puntuali come le pagelle del luned\u00ec.",
-      "Il consiglio di lega, riunito in seduta straordinaria davanti a tre birre, ha ratificato all\u2019unanimit\u00e0 il menu ufficiale che accompagner\u00e0 ogni asta, ogni scontro diretto e ogni sconfitta bruciante. Cinque gusti, nessun compromesso: chi vuole l\u2019ananas sa gi\u00e0 dove non trovarlo."
+      "Dopo lunghe trattative \u2014 condotte, come vuole la prassi, direttamente al tavolo e a stomaco pieno \u2014 la lega \u00e8 lieta di annunciare il rinnovo della partnership con la Pizzeria Delfino fino al 2030. Un accordo pluriennale che garantisce continuit\u00e0, stabilit\u00e0 e, soprattutto, consegne puntuali.",
+      "Come da disciplinare, la fornitura resta blindata su cinque gusti, selezionati con la stessa cura riservata alla rosa titolare: nessuna sperimentazione, nessun cedimento alle mode del momento. Queste sono le pizze che ordineremo, asta dopo asta, giornata dopo giornata, vittoria dopo cocente sconfitta."
     ]
   },
   pizze: [
-    { nome: "Salsiccia e patate", ingredienti: "mozzarella, salsiccia, patate al forno", voto: 9.5, autore: "il consiglio di lega", nota: "La regina. Vince l\u2019asta prima ancora di iniziare." },
-    { nome: "Salsiccia", ingredienti: "mozzarella, salsiccia", voto: 8.5, autore: "i puristi", nota: "Senza fronzoli, come un modulo 3-4-3 vecchio stampo." },
-    { nome: "W\u00fcrstel e patatine", ingredienti: "mozzarella, w\u00fcrstel, patatine fritte", voto: 8.0, autore: "il fondatore", nota: "Divide la lega ma riempie il tavolo. Da sfondamento." },
-    { nome: "Vecchia Modena", ingredienti: "squacquerone, prosciutto crudo, rucola", voto: 7.5, autore: "l\u2019ala nobile", nota: "L\u2019acquisto di classe: costa un po\u2019 di pi\u00f9, ma si fa notare." },
-    { nome: "Margherita", ingredienti: "pomodoro, mozzarella, basilico", voto: 7.0, autore: "tutti, prima o poi", nota: "Il jolly. Nessuno la sceglie per primo, nessuno la rifiuta." }
+    { nome: "Salsiccia e patate", ingredienti: "mozzarella, salsiccia, patate al forno", nota: "La titolare inamovibile. Si ordina prima ancora di aprire il men\u00f9." },
+    { nome: "Salsiccia", ingredienti: "mozzarella, salsiccia", nota: "Per chi non ama le distrazioni. Essenziale, concreta, affidabile." },
+    { nome: "W\u00fcrstel e patatine", ingredienti: "mozzarella, w\u00fcrstel, patatine fritte", nota: "Storicamente divisiva, storicamente finita per prima." },
+    { nome: "Vecchia Modena", ingredienti: "squacquerone, prosciutto crudo, rucola", nota: "La quota nobile del cartone. Ci fa sembrare persone serie." },
+    { nome: "Margherita", ingredienti: "pomodoro, mozzarella, basilico", nota: "Il jolly diplomatico: nessuno la propone, nessuno la contesta." }
   ],
 
   finestraMercato: "Riapre dopo la 9ª giornata"
