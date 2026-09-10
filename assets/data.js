@@ -186,7 +186,7 @@ window.LEGA = {
       }
     },
     {
-      nome: "AVELLINO BANFI", slug: "avellino-banfi", img: null, totale: 496,
+      nome: "AVELLINO BANFI", slug: "avellino-banfi", img: "avellino-banfi.jpg", totale: 496,
       reparti: {
         P: [{ n: "Maignan", c: 47 }, { n: "Torriani", c: 1 }, { n: "Terracciano", c: 1 }],
         D: [{ n: "Bisseck", c: 20 }, { n: "Gila", c: 16 }, { n: "N'Dicka", c: 16 }, { n: "Solet", c: 14 }, { n: "Doekhi", c: 4 }, { n: "Comert", c: 1 }, { n: "Bracaglia", c: 1 }, { n: "Abankwah", c: 1 }],
@@ -195,7 +195,7 @@ window.LEGA = {
       }
     },
     {
-      nome: "HERTA RALLO", slug: "herta-rallo", img: null, totale: 473,
+      nome: "HERTA RALLO", slug: "herta-rallo", img: "herta-rallo.jpg", totale: 473,
       reparti: {
         P: [{ n: "Skorupski", c: 10 }, { n: "Corvi", c: 3 }, { n: "Perri", c: 1 }],
         D: [{ n: "Wesley", c: 39 }, { n: "Ramon", c: 15 }, { n: "Scalvini", c: 10 }, { n: "De Winter", c: 4 }, { n: "Dodò", c: 2 }, { n: "Sutalo J.", c: 1 }, { n: "Comuzzo", c: 1 }, { n: "Olivera", c: 1 }],
