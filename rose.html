@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Regolamento — Fantacazzo</title>
-<meta name="description" content="Il regolamento della lega di fantacalcio: formato, asta, formazioni, punteggi, mercato e premi.">
+<title>Rose 26-27 — Fantacazzo</title>
+<meta name="description" content="Le rose ufficiali della lega Fantacazzo 26-27: card, rosa completa e crediti spesi per ogni squadra.">
 <meta name="theme-color" content="#171412">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,600;6..96,800&family=Archivo:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="assets/style.css?v=07a256f">
 </head>
-<body data-page="regolamento">
+<body data-page="rose">
 
 <div class="topbar">
   <div><span data-slot="data-oggi"></span></div>
@@ -24,9 +24,9 @@
     <a href="index.html">Home</a>
     <a href="giornata.html">Giornata</a>
     <a href="squadre.html">Squadre</a>
-    <a href="rose.html">Rose</a>
+    <a href="rose.html" aria-current="page">Rose</a>
     <a href="albo.html">Albo &amp; mercato</a>
-    <a href="regolamento.html" aria-current="page">Regolamento</a>
+    <a href="regolamento.html">Regolamento</a>
     <a href="pizze.html">Gusti pizze</a>
   </nav>
 </header>
@@ -34,17 +34,14 @@
 <main class="page">
   <div class="page-head">
     <div>
-      <div class="eyebrow" data-slot="reg-aggiornato"></div>
-      <h1>Regolamento</h1>
+      <div class="eyebrow">Fantacazzo 26-27 &middot; decima edizione</div>
+      <h1>Rose</h1>
     </div>
   </div>
 
   <div class="split-teams">
-    <aside class="reg-toc" data-slot="reg-toc"></aside>
-    <div class="stack">
-      <p class="hero-dek" data-slot="reg-intro"></p>
-      <div class="reg-list" data-slot="reg-body"></div>
-    </div>
+    <aside class="reg-toc rose-nav" data-slot="rose-nav"></aside>
+    <div class="rose-list" data-slot="rose"></div>
   </div>
 </main>
 
@@ -54,7 +51,7 @@
     <div class="small">fantacazzo.men &middot; lega <span data-slot="lega-nome"></span> &middot; stagione <span data-slot="stagione"></span></div>
   </div>
   <nav>
-    <div><span class="h">Lega</span><a href="index.html">Home</a><a href="giornata.html">Giornata</a><a href="squadre.html">Squadre</a></div>
+    <div><span class="h">Lega</span><a href="index.html">Home</a><a href="squadre.html">Squadre</a><a href="albo.html">Albo d&#39;oro</a></div>
   </nav>
 </footer>
 

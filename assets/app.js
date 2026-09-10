@@ -399,6 +399,46 @@
     }).join(''));
   }
 
+  /* ---------------- rose ---------------- */
+
+  function paginaRose() {
+    var teams = L.rose || [];
+    if (!teams.length) return;
+    var repNomi = { P: 'Portieri', D: 'Difensori', C: 'Centrocampisti', A: 'Attaccanti' };
+    var repCol  = { P: FAINT, D: ACCENT, C: '#1E4C7A', A: RUST };
+
+    // indice laterale
+    html($('[data-slot="rose-nav"]'), teams.map(function (t, i) {
+      return '<a href="#sq-' + t.slug + '"><span class="idx num">' + (i + 1) + '</span>' + esc(t.nome) + '</a>';
+    }).join(''));
+
+    html($('[data-slot="rose"]'), teams.map(function (t) {
+      var card = t.img
+        ? '<img class="sq-card" src="assets/img/' + esc(t.img) + '" alt="Card ' + esc(t.nome) + '" loading="lazy">'
+        : '<div class="sq-card sq-card-ph"><span>' + esc(t.nome) + '</span><small>card in arrivo</small></div>';
+
+      var reparti = ['P', 'D', 'C', 'A'].map(function (r) {
+        var players = (t.reparti && t.reparti[r]) || [];
+        return '<div class="sq-reparto">' +
+          '<div class="reparto"><i style="background:' + repCol[r] + '"></i><b>' + repNomi[r] + '</b>' +
+            '<span class="rep-n num">' + players.length + '</span></div>' +
+          players.map(function (p) {
+            return '<div class="rosa-row"><span class="nome">' + esc(p.n) + '</span>' +
+              '<span class="costo num">' + p.c + '</span></div>';
+          }).join('') + '</div>';
+      }).join('');
+
+      return '<section class="sq" id="sq-' + t.slug + '">' +
+        '<div class="sq-media">' + card + '</div>' +
+        '<div class="sq-rosa panel">' +
+          '<header><h2>' + esc(t.nome) + '</h2>' +
+            '<span class="note">25 giocatori &middot; ' + t.totale + '/500 crediti</span></header>' +
+          '<div class="sq-reparti">' + reparti + '</div>' +
+        '</div>' +
+      '</section>';
+    }).join(''));
+  }
+
   /* ---------------- comune ---------------- */
 
   function comune() {
@@ -426,5 +466,6 @@
     else if (p === 'albo') paginaAlbo();
     else if (p === 'regolamento') paginaRegolamento();
     else if (p === 'pizze') paginaPizze();
+    else if (p === 'rose') paginaRose();
   });
 })();

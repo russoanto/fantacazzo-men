@@ -153,5 +153,102 @@ window.LEGA = {
     { nome: "Margherita", ingredienti: "pomodoro, mozzarella, basilico", nota: "Il jolly diplomatico: nessuno la propone, nessuno la contesta." }
   ],
 
+  /* ============================================================
+     ROSE 26-27 — dai roster ufficiali (export fantacalcio.it).
+     Ogni squadra: card (immagine descrizione) + rosa per reparto.
+     ============================================================ */
+  rose: [
+    {
+      nome: "NITRATO DI STRONZIO", slug: "nitrato-di-stronzio", img: null, totale: 498,
+      reparti: {
+        P: [{ n: "Butez", c: 44 }, { n: "Sanchez Ro.", c: 12 }, { n: "Stankovic F.", c: 1 }],
+        D: [{ n: "Valle", c: 19 }, { n: "Akanji", c: 19 }, { n: "Pavlovic", c: 17 }, { n: "Ostigard", c: 11 }, { n: "Tiago Gabriel", c: 10 }, { n: "Obert", c: 4 }, { n: "Gabbia", c: 2 }, { n: "Lulli", c: 1 }],
+        C: [{ n: "Gudmundsson A.", c: 42 }, { n: "Perrone", c: 12 }, { n: "Adzic", c: 9 }, { n: "Gaetano", c: 3 }, { n: "Elmas", c: 1 }, { n: "Cambiaghi", c: 1 }, { n: "Odgaard", c: 1 }, { n: "Matic", c: 1 }],
+        A: [{ n: "Douvikas", c: 108 }, { n: "Krstovic", c: 70 }, { n: "Lang", c: 60 }, { n: "Santos A.", c: 24 }, { n: "Maldini", c: 21 }, { n: "Gnonto", c: 5 }]
+      }
+    },
+    {
+      nome: "TOTÒRIINO", slug: "totoriino", img: "totoriino.jpg", totale: 488,
+      reparti: {
+        P: [{ n: "Meret", c: 39 }, { n: "Milinkovic-Savic V.", c: 6 }, { n: "Contini", c: 1 }],
+        D: [{ n: "Chalobah T.", c: 12 }, { n: "Spence", c: 10 }, { n: "Mangas", c: 6 }, { n: "Kamara H.", c: 6 }, { n: "Delprato", c: 3 }, { n: "Fortini", c: 1 }, { n: "Idzes", c: 1 }, { n: "Jimenez A.", c: 1 }],
+        C: [{ n: "Frattesi", c: 61 }, { n: "Diouf", c: 23 }, { n: "Rowe", c: 20 }, { n: "Alajbegovic", c: 19 }, { n: "Cissè A.", c: 14 }, { n: "Modric", c: 11 }, { n: "Mandragora", c: 11 }, { n: "Thorstvedt", c: 5 }],
+        A: [{ n: "Thuram", c: 154 }, { n: "Diao", c: 65 }, { n: "Raimondo", c: 16 }, { n: "Bobcek", c: 1 }, { n: "Lontani", c: 1 }, { n: "Ghedjemis", c: 1 }]
+      }
+    },
+    {
+      nome: "Herta Vernello", slug: "herta-vernello", img: "herta-vernello.jpg", totale: 473,
+      reparti: {
+        P: [{ n: "Svilar", c: 48 }, { n: "Provedel", c: 1 }, { n: "Gollini", c: 1 }],
+        D: [{ n: "Rrahmani", c: 19 }, { n: "Couto", c: 17 }, { n: "Miranda J.", c: 8 }, { n: "Carlos Augusto", c: 5 }, { n: "Balerdi", c: 2 }, { n: "Buongiorno", c: 2 }, { n: "Dragusin", c: 1 }, { n: "Estupinan", c: 1 }],
+        C: [{ n: "Vlasic", c: 33 }, { n: "De Bruyne", c: 31 }, { n: "Pulisic", c: 26 }, { n: "Atta", c: 25 }, { n: "Konè M.", c: 16 }, { n: "Taylor K.", c: 8 }, { n: "Goncalves P.", c: 3 }, { n: "Fitz-Jim", c: 1 }],
+        A: [{ n: "Davis K.", c: 71 }, { n: "Esposito Se.", c: 57 }, { n: "Simeone", c: 31 }, { n: "Berardi", c: 27 }, { n: "Yildiz", c: 20 }, { n: "Castro S.", c: 19 }]
+      }
+    },
+    {
+      nome: "AVELLINO BANFI", slug: "avellino-banfi", img: null, totale: 496,
+      reparti: {
+        P: [{ n: "Maignan", c: 47 }, { n: "Torriani", c: 1 }, { n: "Terracciano", c: 1 }],
+        D: [{ n: "Bisseck", c: 20 }, { n: "Gila", c: 16 }, { n: "N'Dicka", c: 16 }, { n: "Solet", c: 14 }, { n: "Doekhi", c: 4 }, { n: "Comert", c: 1 }, { n: "Bracaglia", c: 1 }, { n: "Abankwah", c: 1 }],
+        C: [{ n: "Paz N.", c: 100 }, { n: "Baldanzi", c: 7 }, { n: "Samardzic", c: 5 }, { n: "Oulai", c: 2 }, { n: "Pisilli", c: 1 }, { n: "Volpato", c: 1 }, { n: "Fagioli", c: 1 }, { n: "Cristante", c: 1 }],
+        A: [{ n: "Martinez L.", c: 202 }, { n: "Beto", c: 20 }, { n: "Adams C.", c: 19 }, { n: "Bonny", c: 9 }, { n: "Bowie", c: 5 }, { n: "Robinson J.", c: 1 }]
+      }
+    },
+    {
+      nome: "HERTA RALLO", slug: "herta-rallo", img: null, totale: 473,
+      reparti: {
+        P: [{ n: "Skorupski", c: 10 }, { n: "Corvi", c: 3 }, { n: "Perri", c: 1 }],
+        D: [{ n: "Wesley", c: 39 }, { n: "Ramon", c: 15 }, { n: "Scalvini", c: 10 }, { n: "De Winter", c: 4 }, { n: "Dodò", c: 2 }, { n: "Sutalo J.", c: 1 }, { n: "Comuzzo", c: 1 }, { n: "Olivera", c: 1 }],
+        C: [{ n: "Mora", c: 62 }, { n: "Rabiot", c: 31 }, { n: "Chukwueze", c: 26 }, { n: "Bernardeschi", c: 21 }, { n: "McKennie", c: 11 }, { n: "Vergara", c: 3 }, { n: "Romano", c: 1 }, { n: "Colpani", c: 1 }],
+        A: [{ n: "Scamacca", c: 90 }, { n: "Dybala", c: 80 }, { n: "Pellegrino M.", c: 28 }, { n: "Piccoli", c: 23 }, { n: "Adams A.", c: 8 }, { n: "Osmajic", c: 1 }]
+      }
+    },
+    {
+      nome: "TOMAS TURBATO", slug: "tomas-turbato", img: "tomas-turbato.jpg", totale: 463,
+      reparti: {
+        P: [{ n: "Martinez Jo.", c: 40 }, { n: "Bijlow", c: 5 }, { n: "Stolz", c: 1 }],
+        D: [{ n: "Dimarco", c: 67 }, { n: "Mancini", c: 25 }, { n: "Bernasconi", c: 7 }, { n: "Valeri", c: 5 }, { n: "Obrador", c: 4 }, { n: "Diego Carlos", c: 3 }, { n: "Gallo", c: 2 }, { n: "Veiga D.", c: 1 }],
+        C: [{ n: "McTominay", c: 47 }, { n: "Barella", c: 31 }, { n: "Ekkelenkamp", c: 29 }, { n: "Lobotka", c: 5 }, { n: "Bernabè", c: 3 }, { n: "Coulibaly L.", c: 2 }, { n: "Sucic P.", c: 1 }, { n: "Thuram K.", c: 1 }],
+        A: [{ n: "Esposito F.P.", c: 85 }, { n: "Dovbyk", c: 35 }, { n: "Raspadori", c: 30 }, { n: "Colombo", c: 15 }, { n: "Geubbels", c: 13 }, { n: "Kevin Carlos", c: 6 }]
+      }
+    },
+    {
+      nome: "REAL COLIZZATI", slug: "real-colizzati", img: "real-colizzati.jpg", totale: 414,
+      reparti: {
+        P: [{ n: "Carnesecchi", c: 37 }, { n: "Falcone", c: 11 }, { n: "Sportiello", c: 1 }],
+        D: [{ n: "Molina N.", c: 27 }, { n: "Hermoso", c: 27 }, { n: "Tavares N.", c: 16 }, { n: "Di Lorenzo", c: 16 }, { n: "Spinazzola", c: 8 }, { n: "Belghali", c: 6 }, { n: "Doig", c: 4 }, { n: "Cinquegrano", c: 2 }],
+        C: [{ n: "Joao Mario", c: 1 }, { n: "Conceicao", c: 31 }, { n: "Ederson D.S.", c: 21 }, { n: "Calò", c: 5 }, { n: "Saelemaekers", c: 5 }, { n: "Zambo Anguissa", c: 3 }, { n: "Cacciamani", c: 1 }, { n: "Pellegrini Lo.", c: 1 }],
+        A: [{ n: "Hojlund", c: 67 }, { n: "Kean", c: 65 }, { n: "Neres", c: 56 }, { n: "Lucca", c: 1 }, { n: "Mota", c: 1 }, { n: "Cutrone", c: 1 }]
+      }
+    },
+    {
+      nome: "HEIL-NASSR", slug: "heil-nassr", img: "heil-nassr.jpg", totale: 499,
+      reparti: {
+        P: [{ n: "Mandas", c: 27 }, { n: "Okoye", c: 11 }, { n: "Motta", c: 1 }],
+        D: [{ n: "Kalulu", c: 22 }, { n: "Lucumì", c: 10 }, { n: "Holm", c: 2 }, { n: "Mina", c: 2 }, { n: "Floriani Mussolini", c: 1 }, { n: "Marcandalli", c: 1 }, { n: "Bartesaghi", c: 1 }, { n: "Zortea", c: 1 }],
+        C: [{ n: "Calhanoglu", c: 72 }, { n: "Baturina", c: 69 }, { n: "Zielinski", c: 25 }, { n: "Jones C.", c: 19 }, { n: "Gonzalez N.", c: 13 }, { n: "Karlstrom", c: 1 }, { n: "Frendrup", c: 1 }, { n: "Winks", c: 1 }],
+        A: [{ n: "Kolo Muani", c: 82 }, { n: "Woltemade", c: 65 }, { n: "Soulè", c: 44 }, { n: "De Ketelaere", c: 18 }, { n: "Yeboah J.", c: 7 }, { n: "Vitinha O.", c: 3 }]
+      }
+    },
+    {
+      nome: "DUA LIPSIA", slug: "dua-lipsia", img: "dua-lipsia.jpg", totale: 498,
+      reparti: {
+        P: [{ n: "De Gea", c: 12 }, { n: "Caprile", c: 10 }, { n: "Muric", c: 6 }],
+        D: [{ n: "Bastoni", c: 30 }, { n: "Bellanova", c: 12 }, { n: "Vasquez", c: 8 }, { n: "Valdepenas", c: 5 }, { n: "Kaiki", c: 1 }, { n: "Vojvoda", c: 1 }, { n: "Pavard", c: 1 }, { n: "Zappacosta", c: 1 }],
+        C: [{ n: "Orsolini", c: 60 }, { n: "Zaccagni", c: 44 }, { n: "Kessiè", c: 15 }, { n: "Politano", c: 15 }, { n: "Moreira", c: 5 }, { n: "Milla", c: 3 }, { n: "Busio", c: 2 }, { n: "Ndour", c: 1 }],
+        A: [{ n: "Adopo", c: 1 }, { n: "Ramos G.", c: 198 }, { n: "Pinamonti", c: 51 }, { n: "Tourè E.", c: 12 }, { n: "Camarda", c: 2 }, { n: "Kvernadze", c: 2 }]
+      }
+    },
+    {
+      nome: "A.C. REGGIANAL", slug: "ac-reggianal", img: "ac-reggianal.jpg", totale: 500,
+      reparti: {
+        P: [{ n: "Vicario", c: 39 }, { n: "Grabara", c: 1 }, { n: "Pinsoglio", c: 1 }],
+        D: [{ n: "Bremer", c: 31 }, { n: "Stones", c: 13 }, { n: "Celik", c: 10 }, { n: "Theate", c: 6 }, { n: "Provstgaard", c: 3 }, { n: "Bella-Kotchap", c: 2 }, { n: "Heggem", c: 1 }, { n: "Drameh", c: 1 }],
+        C: [{ n: "Casale", c: 1 }, { n: "Da Cunha", c: 40 }, { n: "Mastantuono", c: 32 }, { n: "Zaniolo", c: 25 }, { n: "Douglas Luiz", c: 9 }, { n: "Koopmeiners", c: 7 }, { n: "Schmid", c: 1 }, { n: "Fazzini", c: 1 }],
+        A: [{ n: "Pessina", c: 1 }, { n: "Malen", c: 231 }, { n: "Laurientè", c: 31 }, { n: "Romero D.", c: 6 }, { n: "Varela G.", c: 6 }, { n: "Elphege", c: 1 }]
+      }
+    },
+  ],
+
   finestraMercato: "Riapre dopo la 9ª giornata"
 };

@@ -415,3 +415,32 @@ h1, h2, h3 { margin: 0; }
 .pz-id .pz-ing { margin: 5px 0 0; font-size: 14px; letter-spacing: 0.02em; color: var(--muted); }
 .pz-note { margin: 0; padding-top: 12px; border-top: 1px solid var(--line); font-size: 15px; line-height: 1.5; color: var(--body); font-style: italic; }
 @media (max-width: 900px) { .pz-list { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- rose ---------- */
+.rose-nav a { font-size: 13px; }
+.rose-list { display: flex; flex-direction: column; gap: 40px; }
+.sq { display: grid; grid-template-columns: 360px minmax(0, 1fr); gap: 32px; scroll-margin-top: 20px; align-items: start; }
+.sq-media { position: sticky; top: 20px; }
+.sq-card { display: block; width: 100%; border: 1px solid var(--rule); }
+.sq-card-ph { aspect-ratio: 4 / 5; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; background: var(--pitch); color: var(--paper-hi); text-align: center; padding: 24px; }
+.sq-card-ph span { font-family: var(--serif); font-size: 26px; font-weight: 800; line-height: 1.1; }
+.sq-card-ph small { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #9CC3AC; }
+.sq-rosa > header h2 { text-transform: none; }
+.sq-reparti { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.sq-reparto { border-right: 1px solid var(--line); }
+.sq-reparto:nth-child(2n) { border-right: 0; }
+.sq-reparto:nth-child(-n+2) .reparto { border-top: 0; }
+.rep-n { margin-left: auto; font-size: 12px; color: var(--muted); }
+.sq-reparto .rosa-row { justify-content: space-between; }
+.sq-reparto .rosa-row .nome { flex: 1 1 auto; }
+.sq-reparto .rosa-row .costo { width: auto; padding-left: 10px; }
+@media (max-width: 1100px) {
+  .rose-nav { position: static; }
+  .sq { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .sq-media { position: static; max-width: 360px; }
+}
+@media (max-width: 560px) {
+  .sq-reparti { grid-template-columns: minmax(0, 1fr); }
+  .sq-reparto { border-right: 0; }
+  .sq-reparto .reparto { border-top: 1px solid var(--rule); }
+}
